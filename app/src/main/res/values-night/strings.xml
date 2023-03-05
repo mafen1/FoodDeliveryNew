@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="descrtiptionScreen2">You don\'t have to worry about the ease \n of adjusting the time frame unless you have \n a consistent free spotlight.</string>
+    <string name="button">Button</string>
+    <string name="emailEDtext">Email</string>
+    <string name="passwordEDText">Password</string>
+</resources>

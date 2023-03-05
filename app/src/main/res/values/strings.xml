@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FoodDelivery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descriptionLogo">Your meal right away !</string>
+    <string name="descrtiptionScreen2">You don\'t have to worry about the ease \n of adjusting the time frame unless you have \n a consistent free spotlight.</string>
+    <string name="button">Button</string>
+    <string name="emailEDtext">Email</string>
+    <string name="passwordEDText">Password</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeScreen">
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.fooddelivery.presentation.welcomeScreen.WelcomeScreen"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_welcomeScreen2"
+            app:destination="@id/welcomeScreen2" />
+        <action
+            android:id="@+id/action_welcomeScreen_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreen2"
+        android:name="com.example.fooddelivery.presentation.welcomeScreen.WelcomeScreen2"
+        android:label="fragment_welcome_screen2"
+        tools:layout="@layout/fragment_welcome_screen2" >
+        <action
+            android:id="@+id/action_welcomeScreen2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fooddelivery.presentation.loginScreen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.fooddelivery.data.login.models.LoginGoogle" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fooddelivery.presentation.homeScreen.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.fooddelivery.data.login.models.LoginGoogle" />
+    </fragment>
+</navigation>
